@@ -1,6 +1,6 @@
 # Skillheed-Demo
 
-**EduSphere: School, College & Sports Management System.** This is a UI demo with a premium login page and three workspace dashboards.
+**SkillHeed: School, College & Sports Management System.** This is a UI demo with a premium login page and three workspace dashboards.
 
 > UI only. Login is a dummy for demonstration, and no backend is connected.
 
@@ -38,8 +38,8 @@ Then open http://localhost:3000/login.
 
 ## Demo material (`demo/`)
 
-- `EduSphere_Demo_Video.mp4`: a step-by-step walkthrough (silent, with English and Hindi captions)
-- `EduSphere_Demo_English.pptx` and `EduSphere_Demo_Hindi.pptx`: presentation decks
+- `SkillHeed_Demo_Video.mp4`: a step-by-step walkthrough (silent, with English and Hindi captions)
+- `SkillHeed_Demo_English.pptx` and `SkillHeed_Demo_Hindi.pptx`: presentation decks
 - `scripts/`: Playwright and pptxgenjs scripts used to record the video and build the decks
 
 ## Tech stack

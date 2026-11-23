@@ -34,7 +34,7 @@ export function Sidebar({
         <LogoMark className="size-8" />
         <div className="leading-tight">
           <p className="text-[15px] font-extrabold tracking-tight text-slate-900">
-            Edu<span className="text-indigo-600">Sphere</span>
+            Skill<span className="text-indigo-600">Heed</span>
           </p>
           <p className="text-[11px] font-medium text-slate-500">{config.label} Workspace</p>
         </div>
@@ -102,7 +102,7 @@ export function Sidebar({
 
       <div className="border-t border-slate-100 p-4">
         <div className="rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-700 p-3.5 text-white">
-          <p className="text-[13px] font-semibold">Upgrade to EduSphere Pro</p>
+          <p className="text-[13px] font-semibold">Upgrade to SkillHeed Pro</p>
           <p className="mt-0.5 text-[11px] text-indigo-100">AI insights, advanced analytics & priority support.</p>
         </div>
       </div>

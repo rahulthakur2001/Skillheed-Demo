@@ -46,7 +46,7 @@ export interface Session {
   workspace: WorkspaceType;
 }
 
-const SESSION_KEY = "edusphere.session";
+const SESSION_KEY = "skillheed.session";
 
 export async function dummySignIn(input: {
   workspace: WorkspaceType;

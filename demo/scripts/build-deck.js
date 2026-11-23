@@ -1,4 +1,4 @@
-// Builds EduSphere demo decks in English and Hindi with pptxgenjs.
+// Builds SkillHeed demo decks in English and Hindi with pptxgenjs.
 const pptxgen = require("pptxgenjs");
 const path = require("path");
 // Optional: set APPLY_THEME_PATH to a script exporting applyTheme(deckPath, theme) to write theme colors.
@@ -12,10 +12,10 @@ const HEX = {
 
 const T = {
   en: {
-    file: "EduSphere_Demo_English.pptx",
+    file: "SkillHeed_Demo_English.pptx",
     font: { head: "Arial", body: "Calibri" },
-    footer: "EduSphere · UI Demo Walkthrough",
-    title: "EduSphere",
+    footer: "SkillHeed · UI Demo Walkthrough",
+    title: "SkillHeed",
     subtitle: "School, College & Sports Management System",
     titleNote: "UI Demo Walkthrough · Login page · 3 dashboards · Responsive design",
     sections: ["Overview", "Login", "Dashboards", "Technical"],
@@ -78,18 +78,18 @@ const T = {
     },
     run: {
       title: "How to run the demo",
-      steps: [["Open the project folder", "Desktop\\DEV\\edusphere"], ["Install packages", "npm install"], ["Start the app", "npm run dev"], ["Open in browser", "localhost:3000/login"]],
+      steps: [["Open the project folder", "Desktop\\DEV\\skillheed-demo"], ["Install packages", "npm install"], ["Start the app", "npm run dev"], ["Open in browser", "localhost:3000/login"]],
       nextTitle: "Next steps",
       next: ["Connect real authentication (backend API)", "Load live data into dashboards", "Build full module screens one by one"],
     },
     thanks: "Thank you",
-    thanksSub: "EduSphere – Manage Learning. Empower Growth.",
+    thanksSub: "SkillHeed – Manage Learning. Empower Growth.",
   },
   hi: {
-    file: "EduSphere_Demo_Hindi.pptx",
+    file: "SkillHeed_Demo_Hindi.pptx",
     font: { head: "Nirmala UI", body: "Nirmala UI" },
-    footer: "EduSphere · UI डेमो वॉकथ्रू",
-    title: "EduSphere",
+    footer: "SkillHeed · UI डेमो वॉकथ्रू",
+    title: "SkillHeed",
     subtitle: "स्कूल, कॉलेज और स्पोर्ट्स मैनेजमेंट सिस्टम",
     titleNote: "UI डेमो वॉकथ्रू · लॉगिन पेज · 3 डैशबोर्ड · रिस्पॉन्सिव डिज़ाइन",
     sections: ["परिचय", "लॉगिन", "डैशबोर्ड", "तकनीकी"],
@@ -152,12 +152,12 @@ const T = {
     },
     run: {
       title: "डेमो कैसे चलाएँ",
-      steps: [["प्रोजेक्ट फ़ोल्डर खोलें", "Desktop\\DEV\\edusphere"], ["पैकेज इंस्टॉल करें", "npm install"], ["ऐप शुरू करें", "npm run dev"], ["ब्राउज़र में खोलें", "localhost:3000/login"]],
+      steps: [["प्रोजेक्ट फ़ोल्डर खोलें", "Desktop\\DEV\\skillheed-demo"], ["पैकेज इंस्टॉल करें", "npm install"], ["ऐप शुरू करें", "npm run dev"], ["ब्राउज़र में खोलें", "localhost:3000/login"]],
       nextTitle: "आगे के कदम",
       next: ["असली लॉगिन (बैकएंड API) जोड़ना", "डैशबोर्ड में लाइव डेटा लाना", "हर मॉड्यूल की पूरी स्क्रीन बनाना"],
     },
     thanks: "धन्यवाद",
-    thanksSub: "EduSphere – Manage Learning. Empower Growth.",
+    thanksSub: "SkillHeed – Manage Learning. Empower Growth.",
   },
 };
 
@@ -191,9 +191,9 @@ async function build(lang) {
   const L = T[lang];
   const pres = new pptxgen();
   pres.layout = "LAYOUT_WIDE"; // 13.333 x 7.5
-  pres.title = `EduSphere UI Demo (${lang === "en" ? "English" : "Hindi"})`;
+  pres.title = `SkillHeed UI Demo (${lang === "en" ? "English" : "Hindi"})`;
   const THEME = {
-    name: "EduSphere",
+    name: "SkillHeed",
     headFontFace: L.font.head,
     bodyFontFace: L.font.body,
     colors: {
@@ -259,7 +259,7 @@ async function build(lang) {
   // 1. Title
   pres.addSection({ title: L.sections[0] });
   let s = pres.addSlide({ masterName: "DARK_TITLE", sectionTitle: L.sections[0] });
-  s.addImage({ path: path.join(__dirname, "deckshots", "logo.png"), x: 0.8, y: 1.0, w: 1.1, h: 1.1, objectName: "logo", altText: "EduSphere logo" });
+  s.addImage({ path: path.join(__dirname, "deckshots", "logo.png"), x: 0.8, y: 1.0, w: 1.1, h: 1.1, objectName: "logo", altText: "SkillHeed logo" });
   s.addText(L.title, { placeholder: "title" });
   s.addText([{ text: L.subtitle, options: { breakLine: true, bold: true, color: "FFFFFF" } }, { text: L.titleNote, options: { fontSize: 18 } }], { placeholder: "body" });
   s.addText("November 2026", { x: 0.8, y: 6.6, w: 4, h: 0.4, fontSize: 14, color: "A5B4FC", margin: 0, isTextBox: true });
@@ -367,7 +367,7 @@ async function build(lang) {
 
   // 13. thanks
   s = pres.addSlide({ masterName: "DARK_TITLE", sectionTitle: L.sections[3] });
-  s.addImage({ path: path.join(__dirname, "deckshots", "logo.png"), x: 0.8, y: 1.0, w: 1.1, h: 1.1, objectName: "logo", altText: "EduSphere logo" });
+  s.addImage({ path: path.join(__dirname, "deckshots", "logo.png"), x: 0.8, y: 1.0, w: 1.1, h: 1.1, objectName: "logo", altText: "SkillHeed logo" });
   s.addText(L.thanks, { placeholder: "title" });
   s.addText(L.thanksSub, { placeholder: "body" });
 

@@ -40,7 +40,7 @@ export function Logo({
             tone === "dark" ? "text-slate-900" : "text-white"
           )}
         >
-          Edu<span className={tone === "dark" ? "text-indigo-600" : "text-indigo-300"}>Sphere</span>
+          Skill<span className={tone === "dark" ? "text-indigo-600" : "text-indigo-300"}>Heed</span>
         </p>
         {subtitle && (
           <p className={cn("text-[11px] font-medium", tone === "dark" ? "text-slate-500" : "text-indigo-200")}>

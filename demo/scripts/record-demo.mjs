@@ -1,4 +1,4 @@
-// Records a silent, step-by-step demo of the EduSphere UI with bilingual captions.
+// Records a silent, step-by-step demo of the SkillHeed UI with bilingual captions.
 import { chromium } from "playwright";
 import fs from "node:fs";
 
@@ -93,7 +93,7 @@ function api(page) {
   await wait(600);
 
   await a.card(`<svg width="84" height="84" viewBox="0 0 40 40"><rect width="40" height="40" rx="11" fill="#4f46e5"/><circle cx="20" cy="20" r="9.5" fill="none" stroke="#fff" stroke-width="2"/><ellipse cx="20" cy="20" rx="15" ry="5.2" fill="none" stroke="#a5b4fc" stroke-width="1.8" transform="rotate(-24 20 20)"/><path d="M14.5 19.2 20 16.6l5.5 2.6L20 21.8z" fill="#fff"/></svg>
-    <h1>EduSphere</h1><p>School · College · Sports Management System</p><p style="margin-top:22px;font-weight:700;color:#fff">Product Demo – Step by Step</p><p class="hi">प्रोडक्ट डेमो – स्टेप बाय स्टेप</p>`, 4200);
+    <h1>SkillHeed</h1><p>School · College · Sports Management System</p><p style="margin-top:22px;font-weight:700;color:#fff">Product Demo – Step by Step</p><p class="hi">प्रोडक्ट डेमो – स्टेप बाय स्टेप</p>`, 4200);
 
   // STEP 1 – login page tour
   await a.caption("STEP 1 · LOGIN PAGE", "Premium two-column login: branding on the left, secure login card on the right", "लॉगिन पेज: बाईं ओर ब्रांडिंग, दाईं ओर सुरक्षित लॉगिन कार्ड");
@@ -211,7 +211,7 @@ function api(page) {
   const { ctx, page } = await newRecorder({ width: W, height: H }, "raw/outro");
   const a = api(page);
   await page.goto(BASE + "/login", { waitUntil: "networkidle" });
-  await a.card(`<h1>Thank you</h1><p>EduSphere – Manage Learning. Empower Growth.</p><p class="hi">धन्यवाद – EduSphere</p>
+  await a.card(`<h1>Thank you</h1><p>SkillHeed – Manage Learning. Empower Growth.</p><p class="hi">धन्यवाद – SkillHeed</p>
     <p style="margin-top:26px;font-size:16px">Next.js · Tailwind CSS · shadcn/ui · Lucide Icons</p>`, 4000);
   await ctx.close();
   fs.renameSync(await page.video().path(), "raw/outro.webm");

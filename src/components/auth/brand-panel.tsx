@@ -48,7 +48,7 @@ export function BrandPanel() {
 
         <div className="mt-auto flex items-center gap-2 pt-8 text-xs text-indigo-200/70">
           <ShieldCheck className="size-4" />
-          ISO 27001 aligned · Data hosted in India · © 2026 EduSphere
+          ISO 27001 aligned · Data hosted in India · © 2026 SkillHeed
         </div>
       </div>
     </section>

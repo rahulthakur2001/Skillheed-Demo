@@ -4,7 +4,7 @@ import "@fontsource-variable/plus-jakarta-sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "EduSphere – School, College & Sports Management",
+  title: "SkillHeed – School, College & Sports Management",
   description:
     "One powerful platform to manage schools, colleges and sports academies.",
 };

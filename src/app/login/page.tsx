@@ -14,7 +14,7 @@ export default function LoginPage() {
         <header className="relative z-10 flex items-center justify-between px-5 py-5 sm:px-8">
           <Logo className="lg:invisible" />
           <p className="text-sm text-slate-500">
-            <span className="hidden sm:inline">New to EduSphere? </span>
+            <span className="hidden sm:inline">New to SkillHeed? </span>
             <a href="#demo" className="font-semibold text-indigo-600 hover:text-indigo-800">
               Book a demo
             </a>
